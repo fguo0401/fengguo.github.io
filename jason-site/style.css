@@ -1,0 +1,131 @@
+/* Jason Guo — academic homepage
+   Style mirrors Hanzhe Zhang's site: classic, minimal, content-first. */
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 17px;
+    line-height: 1.5;
+    color: #000;
+    background: #fff;
+    max-width: 900px;
+    margin: 24px auto 60px auto;
+    padding: 0 24px;
+}
+
+/* Top navigation */
+nav.topnav {
+    text-align: center;
+    margin-bottom: 28px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #ddd;
+    font-size: 17px;
+}
+
+nav.topnav a {
+    margin: 0 14px;
+}
+
+/* Links: underlined by default, blue, classic academic */
+a { color: #0033cc; text-decoration: underline; }
+a:visited { color: #551a8b; }
+a:hover { color: #cc0000; }
+
+/* Headings */
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 0 14px 0;
+}
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 28px 0 10px 0;
+}
+h3 {
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin: 24px 0 8px 0;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 4px;
+}
+
+/* Home page layout: text on left, photo on right */
+.home-wrap {
+    display: flex;
+    gap: 28px;
+    align-items: flex-start;
+}
+.home-text { flex: 1; min-width: 0; }
+.home-side {
+    width: 230px;
+    flex-shrink: 0;
+    text-align: center;
+    font-size: 15px;
+}
+.home-side img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #999;
+    margin-bottom: 8px;
+}
+.home-side .links {
+    margin-top: 6px;
+    line-height: 1.7;
+}
+
+/* Lists */
+ol, ul {
+    padding-left: 24px;
+    margin: 8px 0 14px 0;
+}
+ol li, ul li {
+    margin-bottom: 10px;
+}
+
+/* News list — items with leading emoji */
+ul.news {
+    list-style: none;
+    padding-left: 0;
+}
+ul.news li {
+    margin-bottom: 6px;
+    padding-left: 4px;
+    line-height: 1.4;
+}
+
+/* Italics for journal names — also via <em> */
+em, i { font-style: italic; }
+
+/* Inline link group */
+.linkrow { margin: 6px 0; }
+
+/* Subtle small text under entries (data links, media coverage) */
+.note {
+    display: block;
+    font-size: 15px;
+    margin-top: 4px;
+    margin-left: 8px;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    margin-top: 48px;
+    padding-top: 12px;
+    border-top: 1px solid #ddd;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+    body { font-size: 16px; padding: 0 16px; }
+    .home-wrap { flex-direction: column-reverse; }
+    .home-side { width: 60%; margin: 0 auto 16px auto; }
+    nav.topnav a { margin: 0 8px; display: inline-block; }
+}
