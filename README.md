@@ -1,7 +1,5 @@
 # Jason (Feng) Guo — Academic Homepage
 
-A simple, fast, GitHub-Pages-hosted academic site styled after
-[Hanzhe Zhang's homepage](https://hanzhezhang.github.io/).
 Pure HTML + one CSS file. No build step. No frameworks.
 
 ## File Structure
